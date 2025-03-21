@@ -1,14 +1,5 @@
 def encrypt_vigenere(plaintext, keyword):
-    """
-    Encrypts plaintext using a Vigenere cipher.
 
-    >>> encrypt_vigenere("PYTHON", "A")
-    'PYTHON'
-    >>> encrypt_vigenere("python", "a")
-    'python'
-    >>> encrypt_vigenere("ATTACKATDAWN", "LEMON")
-    'LXFOPVEFRNHR'
-    """
     # PUT YOUR CODE HERE
     ciphertext = ""
     n = len(keyword) - 1
@@ -29,16 +20,7 @@ def encrypt_vigenere(plaintext, keyword):
 
 
 def decrypt_vigenere(ciphertext, keyword):
-    """
-    Decrypts a ciphertext using a Vigenere cipher.
 
-    >>> decrypt_vigenere("PYTHON", "A")
-    'PYTHON'
-    >>> decrypt_vigenere("python", "a")
-    'python'
-    >>> decrypt_vigenere("LXFOPVEFRNHR", "LEMON")
-    'ATTACKATDAWN'
-    """
     # PUT YOUR CODE HERE
     plaintext = ""
     n=len(keyword)-1
@@ -55,3 +37,11 @@ def decrypt_vigenere(ciphertext, keyword):
             j=-1
     print(plaintext)
     return plaintext
+
+# encrypt_vigenere("PYTHON", "A")
+# encrypt_vigenere("python", "a")
+# encrypt_vigenere("ATTACKATDAWN", "LEMON")
+#
+# decrypt_vigenere("PYTHON", "A")
+# decrypt_vigenere("python", "a")
+# decrypt_vigenere("LXFOPVEFRNHR", "LEMON")
