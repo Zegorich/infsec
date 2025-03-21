@@ -55,10 +55,3 @@ def decrypt_vigenere(ciphertext, keyword):
             j=-1
     print(plaintext)
     return plaintext
-
-encrypt_vigenere("PYTHON", "A")
-encrypt_vigenere("python", "a")
-encrypt_vigenere("ATTACKATDAWN", "LEMON")
-decrypt_vigenere("PYTHON", "A")
-decrypt_vigenere("python", "a")
-decrypt_vigenere("LXFOPVEFRNHR", "LEMON")
